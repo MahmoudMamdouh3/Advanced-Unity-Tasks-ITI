@@ -1,0 +1,998 @@
+=== PROJECT HIERARCHY & INSPECTOR DATA ===
+GameObject: Bird (Active: True)
+  [Component: Transform]
+  [Component: MeshFilter]
+  [Component: MeshRenderer]
+  [Component: BoxCollider]
+  [Component: BirdFly]
+    - speed: 2
+    - width: 5
+    - height: 1
+GameObject: Bird Zone (Active: True)
+  [Component: Transform]
+  [Component: MeshFilter]
+  [Component: MeshRenderer]
+  [Component: BoxCollider]
+  [Component: BirdZone]
+    - headAim: HeadLook_Rig (UnityEngine.Animations.Rigging.MultiAimConstraint)
+GameObject: parent (Active: True)
+  [Component: Transform]
+--GameObject: 🌎 --- WORLD --- (Active: True)
+--  [Component: Transform]
+----GameObject: Environment "Improve" (Active: True)
+----  [Component: Transform]
+------GameObject: Wall4m (Active: True)
+------  [Component: Transform]
+--------GameObject: Wall4m (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+--------GameObject: Wall4mSkirting (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+------GameObject: Wall4m (2) (Active: True)
+------  [Component: Transform]
+--------GameObject: Wall4m (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+--------GameObject: Wall4mSkirting (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+------GameObject: Wall4m (1) (Active: True)
+------  [Component: Transform]
+--------GameObject: Wall4m (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+--------GameObject: Wall4mSkirting (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+------GameObject: Wall4m (3) (Active: True)
+------  [Component: Transform]
+--------GameObject: Wall4m (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+--------GameObject: Wall4mSkirting (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+------GameObject: Wall2m (Active: True)
+------  [Component: Transform]
+------  [Component: BoxCollider]
+--------GameObject: Wall2m (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+--------GameObject: Wall2mSkirting (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+------GameObject: Wall2m (1) (Active: True)
+------  [Component: Transform]
+--------GameObject: Wall2m (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+--------GameObject: Wall2mSkirting (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+------GameObject: Wall4m (4) (Active: True)
+------  [Component: Transform]
+--------GameObject: Wall4m (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+--------GameObject: Wall4mSkirting (Active: True)
+--------  [Component: Transform]
+--------  [Component: MeshFilter]
+--------  [Component: MeshRenderer]
+------GameObject: Ground Plane (Active: True)
+------  [Component: Transform]
+------  [Component: MeshFilter]
+------  [Component: MeshRenderer]
+------  [Component: MeshCollider]
+------GameObject: Ground Plane (1) (Active: True)
+------  [Component: Transform]
+------  [Component: MeshFilter]
+------  [Component: MeshRenderer]
+------  [Component: MeshCollider]
+----GameObject: Directional Light (Active: True)
+----  [Component: Transform]
+----  [Component: Light]
+----  [Component: UniversalAdditionalLightData]
+----GameObject: Global Volume (Active: True)
+----  [Component: Transform]
+----  [Component: Volume]
+----    - priority: 0
+----    - blendDistance: 0
+----    - weight: 1
+----    - sharedProfile: SampleSceneProfile (UnityEngine.Rendering.VolumeProfile)
+--GameObject: 📦 --- ACTORS --- (Active: True)
+--  [Component: Transform]
+----GameObject: PlayerArmature (Active: True)
+----  [Component: Transform]
+----  [Component: Animator]
+----  [Component: CharacterController]
+----  [Component: ThirdPersonController]
+----    - MoveSpeed: 2
+----    - SprintSpeed: 5.335
+----    - RotationSmoothTime: 0.12
+----    - SpeedChangeRate: 10
+----    - LandingAudioClip: Player_Land (UnityEngine.AudioClip)
+----    - FootstepAudioClips: UnityEngine.AudioClip[]
+----    - FootstepAudioVolume: 0.3
+----    - JumpHeight: 1.2
+----    - Gravity: -15
+----    - JumpTimeout: 0.3
+----    - FallTimeout: 0.15
+----    - Grounded: True
+----    - GroundedOffset: -0.14
+----    - GroundedRadius: 0.28
+----    - GroundLayers: UnityEngine.LayerMask
+----    - CinemachineCameraTarget: PlayerCameraRoot (UnityEngine.GameObject)
+----    - TopClamp: 70
+----    - BottomClamp: -30
+----    - CameraAngleOverride: 0
+----    - LockCameraPosition: False
+----  [Component: BasicRigidBodyPush]
+----    - pushLayers: UnityEngine.LayerMask
+----    - canPush: False
+----    - strength: 1.1
+----  [Component: StarterAssetsInputs]
+----    - move: (0.00, 0.00)
+----    - look: (0.00, 0.00)
+----    - jump: False
+----    - sprint: False
+----    - analogMovement: False
+----    - cursorLocked: True
+----    - cursorInputForLook: True
+----  [Component: PlayerInput]
+----  [Component: RigBuilder]
+------GameObject: PlayerCameraRoot (Active: True)
+------  [Component: Transform]
+------GameObject: Geometry (Active: True)
+------  [Component: Transform]
+--------GameObject: Armature_Mesh (Active: True)
+--------  [Component: Transform]
+--------  [Component: SkinnedMeshRenderer]
+------GameObject: Skeleton (Active: True)
+------  [Component: Transform]
+--------GameObject: Hips (Active: True)
+--------  [Component: Transform]
+----------GameObject: Left_UpperLeg (Active: True)
+----------  [Component: Transform]
+------------GameObject: Left_LowerLeg (Active: True)
+------------  [Component: Transform]
+--------------GameObject: Left_Foot (Active: True)
+--------------  [Component: Transform]
+----------------GameObject: Left_Toes (Active: True)
+----------------  [Component: Transform]
+------------------GameObject: Left_ToesEnd (Active: True)
+------------------  [Component: Transform]
+----------GameObject: Right_UpperLeg (Active: True)
+----------  [Component: Transform]
+------------GameObject: Right_LowerLeg (Active: True)
+------------  [Component: Transform]
+--------------GameObject: Right_Foot (Active: True)
+--------------  [Component: Transform]
+----------------GameObject: Right_Toes (Active: True)
+----------------  [Component: Transform]
+------------------GameObject: Right_ToesEnd (Active: True)
+------------------  [Component: Transform]
+----------GameObject: Spine (Active: True)
+----------  [Component: Transform]
+------------GameObject: Chest (Active: True)
+------------  [Component: Transform]
+--------------GameObject: UpperChest (Active: True)
+--------------  [Component: Transform]
+----------------GameObject: Left_Shoulder (Active: True)
+----------------  [Component: Transform]
+------------------GameObject: Left_UpperArm (Active: True)
+------------------  [Component: Transform]
+--------------------GameObject: Left_LowerArm (Active: True)
+--------------------  [Component: Transform]
+----------------------GameObject: Left_Hand (Active: True)
+----------------------  [Component: Transform]
+------------------------GameObject: Left_IndexProximal (Active: True)
+------------------------  [Component: Transform]
+--------------------------GameObject: Left_IndexIntermediate (Active: True)
+--------------------------  [Component: Transform]
+----------------------------GameObject: Left_IndexDistal (Active: True)
+----------------------------  [Component: Transform]
+------------------------------GameObject: Left_IndexDistalEnd (Active: True)
+------------------------------  [Component: Transform]
+------------------------GameObject: Left_MiddleProximal (Active: True)
+------------------------  [Component: Transform]
+--------------------------GameObject: Left_MiddleIntermediate (Active: True)
+--------------------------  [Component: Transform]
+----------------------------GameObject: Left_MiddleDistal (Active: True)
+----------------------------  [Component: Transform]
+------------------------------GameObject: Left_MiddleDistalEnd (Active: True)
+------------------------------  [Component: Transform]
+------------------------GameObject: Left_PinkyProximal (Active: True)
+------------------------  [Component: Transform]
+--------------------------GameObject: Left_PinkyIntermediate (Active: True)
+--------------------------  [Component: Transform]
+----------------------------GameObject: Left_PinkyDistal (Active: True)
+----------------------------  [Component: Transform]
+------------------------------GameObject: Left_PinkyDistalEnd (Active: True)
+------------------------------  [Component: Transform]
+------------------------GameObject: Left_RingProximal (Active: True)
+------------------------  [Component: Transform]
+--------------------------GameObject: Left_RingIntermediate (Active: True)
+--------------------------  [Component: Transform]
+----------------------------GameObject: Left_RingDistal (Active: True)
+----------------------------  [Component: Transform]
+------------------------------GameObject: Left_RingDistalEnd (Active: True)
+------------------------------  [Component: Transform]
+------------------------GameObject: Left_ThumbProximal (Active: True)
+------------------------  [Component: Transform]
+--------------------------GameObject: Left_ThumbIntermediate (Active: True)
+--------------------------  [Component: Transform]
+----------------------------GameObject: Left_ThumbDistal (Active: True)
+----------------------------  [Component: Transform]
+------------------------------GameObject: Left_ThumbDistalEnd (Active: True)
+------------------------------  [Component: Transform]
+----------------GameObject: Neck (Active: True)
+----------------  [Component: Transform]
+------------------GameObject: Head (Active: True)
+------------------  [Component: Transform]
+--------------------GameObject: Jaw (Active: True)
+--------------------  [Component: Transform]
+--------------------GameObject: Left_Eye (Active: True)
+--------------------  [Component: Transform]
+--------------------GameObject: Right_Eye (Active: True)
+--------------------  [Component: Transform]
+------------------GameObject: Neck_Twist_A (Active: True)
+------------------  [Component: Transform]
+----------------GameObject: Right_Shoulder (Active: True)
+----------------  [Component: Transform]
+------------------GameObject: Right_UpperArm (Active: True)
+------------------  [Component: Transform]
+--------------------GameObject: Right_LowerArm (Active: True)
+--------------------  [Component: Transform]
+----------------------GameObject: Right_Hand (Active: True)
+----------------------  [Component: Transform]
+------------------------GameObject: Right_IndexProximal (Active: True)
+------------------------  [Component: Transform]
+--------------------------GameObject: Right_IndexIntermediate (Active: True)
+--------------------------  [Component: Transform]
+----------------------------GameObject: Right_IndexDistal (Active: True)
+----------------------------  [Component: Transform]
+------------------------------GameObject: Right_IndexDistalEnd (Active: True)
+------------------------------  [Component: Transform]
+------------------------GameObject: Right_MiddleProximal (Active: True)
+------------------------  [Component: Transform]
+--------------------------GameObject: Right_MiddleIntermediate (Active: True)
+--------------------------  [Component: Transform]
+----------------------------GameObject: Right_MiddleDistal (Active: True)
+----------------------------  [Component: Transform]
+------------------------------GameObject: Right_MiddleDistalEnd (Active: True)
+------------------------------  [Component: Transform]
+------------------------GameObject: Right_PinkyProximal (Active: True)
+------------------------  [Component: Transform]
+--------------------------GameObject: Right_PinkyIntermediate (Active: True)
+--------------------------  [Component: Transform]
+----------------------------GameObject: Right_PinkyDistal (Active: True)
+----------------------------  [Component: Transform]
+------------------------------GameObject: Right_PinkyDistalEnd (Active: True)
+------------------------------  [Component: Transform]
+------------------------GameObject: Right_RingProximal (Active: True)
+------------------------  [Component: Transform]
+--------------------------GameObject: Right_RingIntermediate (Active: True)
+--------------------------  [Component: Transform]
+----------------------------GameObject: Right_RingDistal (Active: True)
+----------------------------  [Component: Transform]
+------------------------------GameObject: Right_RingDistalEnd (Active: True)
+------------------------------  [Component: Transform]
+------------------------GameObject: Right_ThumbProximal (Active: True)
+------------------------  [Component: Transform]
+--------------------------GameObject: Right_ThumbIntermediate (Active: True)
+--------------------------  [Component: Transform]
+----------------------------GameObject: Right_ThumbDistal (Active: True)
+----------------------------  [Component: Transform]
+------------------------------GameObject: Right_ThumbDistalEnd (Active: True)
+------------------------------  [Component: Transform]
+------GameObject: Rig 1 (Active: True)
+------  [Component: Transform]
+------  [Component: Rig]
+------  [Component: TwoBoneIKConstraint]
+------GameObject: Camera (Active: True)
+------  [Component: Transform]
+------  [Component: Camera]
+------  [Component: AudioListener]
+------  [Component: UniversalAdditionalCameraData]
+------  [Component: CinemachineBrain]
+------    - m_ShowDebugText: False
+------    - m_ShowCameraFrustum: True
+------    - m_IgnoreTimeScale: False
+------    - m_WorldUpOverride: null
+------    - m_UpdateMethod: SmartUpdate
+------    - m_BlendUpdateMethod: LateUpdate
+------    - m_DefaultBlend: Cinemachine.CinemachineBlendDefinition
+------    - m_CustomBlends: 
+------    - m_CameraCutEvent: Cinemachine.CinemachineBrain+BrainEvent Cinemachine.CinemachineBrain+BrainEvent
+------    - m_CameraActivatedEvent: Cinemachine.CinemachineBrain+VcamActivatedEvent Cinemachine.CinemachineBrain+VcamActivatedEvent
+------GameObject: Rig 2 (Active: True)
+------  [Component: Transform]
+------  [Component: Rig]
+--------GameObject: HeadLook_Rig (Active: True)
+--------  [Component: Transform]
+--------  [Component: MultiAimConstraint]
+--GameObject: Door_Hinge (Active: True)
+--  [Component: Transform]
+--  [Component: door]
+--    - handIK: Rig 1 (UnityEngine.Animations.Rigging.TwoBoneIKConstraint)
+--    - player: PlayerArmature (UnityEngine.Transform)
+--    - interactDistance: 2
+--    - handReachSpeed: 1.5
+--    - doorOpenSpeed: 0.3
+----GameObject: Door (Active: True)
+----  [Component: Transform]
+----  [Component: MeshFilter]
+----  [Component: MeshRenderer]
+----  [Component: BoxCollider]
+------GameObject: Handle (Active: True)
+------  [Component: Transform]
+------  [Component: MeshFilter]
+------  [Component: MeshRenderer]
+------  [Component: BoxCollider]
+--------GameObject: RightHand_Target (Active: True)
+--------  [Component: Transform]
+--GameObject: walls (Active: True)
+--  [Component: Transform]
+--  [Component: MeshFilter]
+--  [Component: MeshRenderer]
+--  [Component: BoxCollider]
+--GameObject: walls (1) (Active: True)
+--  [Component: Transform]
+--  [Component: MeshFilter]
+--  [Component: MeshRenderer]
+--  [Component: BoxCollider]
+
+=== PROJECT FILES ===
+Assets\Editor.meta
+Assets\InputSystem_Actions.inputactions
+Assets\InputSystem_Actions.inputactions.meta
+Assets\Readme.asset
+Assets\Readme.asset.meta
+Assets\Scenes.meta
+Assets\Scripts.meta
+Assets\Settings.meta
+Assets\StarterAssets.meta
+Assets\TutorialInfo.meta
+Assets\UnityTechnologies.meta
+Assets\Editor\ProjectDumper.cs
+Assets\Editor\ProjectDumper.cs.meta
+Assets\Scenes\3D - AnimationRigging.unity
+Assets\Scenes\3D - AnimationRigging.unity.meta
+Assets\Scenes\SampleScene.unity
+Assets\Scenes\SampleScene.unity.meta
+Assets\Scripts\BirdFly.cs
+Assets\Scripts\BirdFly.cs.meta
+Assets\Scripts\BirdZone.cs
+Assets\Scripts\BirdZone.cs.meta
+Assets\Scripts\door.cs
+Assets\Scripts\door.cs.meta
+Assets\Scripts\HierarchyToText.cs
+Assets\Scripts\HierarchyToText.cs.meta
+Assets\Settings\DefaultVolumeProfile.asset
+Assets\Settings\DefaultVolumeProfile.asset.meta
+Assets\Settings\Mobile_Renderer.asset
+Assets\Settings\Mobile_Renderer.asset.meta
+Assets\Settings\Mobile_RPAsset.asset
+Assets\Settings\Mobile_RPAsset.asset.meta
+Assets\Settings\PC_Renderer.asset
+Assets\Settings\PC_Renderer.asset.meta
+Assets\Settings\PC_RPAsset.asset
+Assets\Settings\PC_RPAsset.asset.meta
+Assets\Settings\SampleSceneProfile.asset
+Assets\Settings\SampleSceneProfile.asset.meta
+Assets\Settings\UniversalRenderPipelineGlobalSettings.asset
+Assets\Settings\UniversalRenderPipelineGlobalSettings.asset.meta
+Assets\StarterAssets\Environment.meta
+Assets\StarterAssets\InputSystem.meta
+Assets\StarterAssets\license.txt
+Assets\StarterAssets\license.txt.meta
+Assets\StarterAssets\Mobile.meta
+Assets\StarterAssets\Readme.asset
+Assets\StarterAssets\Readme.asset.meta
+Assets\StarterAssets\StarterAssets_Documentation_v1.1.pdf
+Assets\StarterAssets\StarterAssets_Documentation_v1.1.pdf.meta
+Assets\StarterAssets\ThirdPersonController.meta
+Assets\StarterAssets\TutorialInfo.meta
+Assets\TutorialInfo\Editor.meta
+Assets\TutorialInfo\Icons.meta
+Assets\TutorialInfo\Layout.wlt
+Assets\TutorialInfo\Layout.wlt.meta
+Assets\TutorialInfo\Readme.cs
+Assets\TutorialInfo\Readme.cs.meta
+Assets\TutorialInfo\StyleSheets.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior.meta
+Assets\UnityTechnologies\Settings.meta
+Assets\StarterAssets\Environment\Art.meta
+Assets\StarterAssets\Environment\Prefabs.meta
+Assets\StarterAssets\Environment\RenderPipelineProfiles.meta
+Assets\StarterAssets\InputSystem\StarterAssets.inputactions
+Assets\StarterAssets\InputSystem\StarterAssets.inputactions.meta
+Assets\StarterAssets\InputSystem\StarterAssets.inputsettings.asset
+Assets\StarterAssets\InputSystem\StarterAssets.inputsettings.asset.meta
+Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs
+Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs.meta
+Assets\StarterAssets\Mobile\Prefabs.meta
+Assets\StarterAssets\Mobile\Scripts.meta
+Assets\StarterAssets\Mobile\UI.meta
+Assets\StarterAssets\ThirdPersonController\Character.meta
+Assets\StarterAssets\ThirdPersonController\Prefabs.meta
+Assets\StarterAssets\ThirdPersonController\Scenes.meta
+Assets\StarterAssets\ThirdPersonController\Scripts.meta
+Assets\StarterAssets\TutorialInfo\Icons.meta
+Assets\TutorialInfo\Editor\ReadmeEditor.cs
+Assets\TutorialInfo\Editor\ReadmeEditor.cs.meta
+Assets\TutorialInfo\Icons\URP.png
+Assets\TutorialInfo\Icons\URP.png.meta
+Assets\TutorialInfo\StyleSheets\ReadmeEditor.uss
+Assets\TutorialInfo\StyleSheets\ReadmeEditor.uss.meta
+Assets\TutorialInfo\StyleSheets\ReadmeEditorDark.uss
+Assets\TutorialInfo\StyleSheets\ReadmeEditorDark.uss.meta
+Assets\TutorialInfo\StyleSheets\ReadmeEditorLight.uss
+Assets\TutorialInfo\StyleSheets\ReadmeEditorLight.uss.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures.meta
+Assets\UnityTechnologies\Settings\SampleSceneProfile.asset
+Assets\UnityTechnologies\Settings\SampleSceneProfile.asset.meta
+Assets\UnityTechnologies\Settings\Universal Render Pipeline Asset.asset
+Assets\UnityTechnologies\Settings\Universal Render Pipeline Asset.asset.meta
+Assets\UnityTechnologies\Settings\Universal Render Pipeline Asset_Renderer.asset
+Assets\UnityTechnologies\Settings\Universal Render Pipeline Asset_Renderer.asset.meta
+Assets\StarterAssets\Environment\Art\Materials.meta
+Assets\StarterAssets\Environment\Art\Models.meta
+Assets\StarterAssets\Environment\Art\Skybox.meta
+Assets\StarterAssets\Environment\Art\Textures.meta
+Assets\StarterAssets\Environment\Prefabs\Box_100x100x100_Prefab.prefab
+Assets\StarterAssets\Environment\Prefabs\Box_100x100x100_Prefab.prefab.meta
+Assets\StarterAssets\Environment\Prefabs\Box_350x250x200_Prefab.prefab
+Assets\StarterAssets\Environment\Prefabs\Box_350x250x200_Prefab.prefab.meta
+Assets\StarterAssets\Environment\Prefabs\Box_350x250x300_Prefab.prefab
+Assets\StarterAssets\Environment\Prefabs\Box_350x250x300_Prefab.prefab.meta
+Assets\StarterAssets\Environment\Prefabs\Environment_Prefab.prefab
+Assets\StarterAssets\Environment\Prefabs\Environment_Prefab.prefab.meta
+Assets\StarterAssets\Environment\Prefabs\Ramp_Prefab.prefab
+Assets\StarterAssets\Environment\Prefabs\Ramp_Prefab.prefab.meta
+Assets\StarterAssets\Environment\Prefabs\Stairs_200x100x200_Prefab.prefab
+Assets\StarterAssets\Environment\Prefabs\Stairs_200x100x200_Prefab.prefab.meta
+Assets\StarterAssets\Environment\Prefabs\Stairs_650_400_300_Prefab.prefab
+Assets\StarterAssets\Environment\Prefabs\Stairs_650_400_300_Prefab.prefab.meta
+Assets\StarterAssets\Environment\Prefabs\Structure_Prefab.prefab
+Assets\StarterAssets\Environment\Prefabs\Structure_Prefab.prefab.meta
+Assets\StarterAssets\Environment\Prefabs\Tunnel_Prefab.prefab
+Assets\StarterAssets\Environment\Prefabs\Tunnel_Prefab.prefab.meta
+Assets\StarterAssets\Environment\Prefabs\Wall_Prefab.prefab
+Assets\StarterAssets\Environment\Prefabs\Wall_Prefab.prefab.meta
+Assets\StarterAssets\Environment\RenderPipelineProfiles\StarterAssetsHDRPVolumeProfile.asset
+Assets\StarterAssets\Environment\RenderPipelineProfiles\StarterAssetsHDRPVolumeProfile.asset.meta
+Assets\StarterAssets\Environment\RenderPipelineProfiles\StarterAssetsURPAsset.asset
+Assets\StarterAssets\Environment\RenderPipelineProfiles\StarterAssetsURPAsset.asset.meta
+Assets\StarterAssets\Environment\RenderPipelineProfiles\StarterAssetsURPGlobalSettings.asset
+Assets\StarterAssets\Environment\RenderPipelineProfiles\StarterAssetsURPGlobalSettings.asset.meta
+Assets\StarterAssets\Environment\RenderPipelineProfiles\StarterAssetsURPRenderer.asset
+Assets\StarterAssets\Environment\RenderPipelineProfiles\StarterAssetsURPRenderer.asset.meta
+Assets\StarterAssets\Mobile\Prefabs\CanvasInputs.meta
+Assets\StarterAssets\Mobile\Prefabs\EventSystem.meta
+Assets\StarterAssets\Mobile\Prefabs\VirtualInputs.meta
+Assets\StarterAssets\Mobile\Scripts\CanvasInputs.meta
+Assets\StarterAssets\Mobile\Scripts\Utilities.meta
+Assets\StarterAssets\Mobile\Scripts\VirtualInputs.meta
+Assets\StarterAssets\Mobile\UI\UI_Circle_Bevel_Base.png
+Assets\StarterAssets\Mobile\UI\UI_Circle_Bevel_Base.png.meta
+Assets\StarterAssets\Mobile\UI\UI_Circle_Faded.png
+Assets\StarterAssets\Mobile\UI\UI_Circle_Faded.png.meta
+Assets\StarterAssets\Mobile\UI\UI_Icon_Jump.png
+Assets\StarterAssets\Mobile\UI\UI_Icon_Jump.png.meta
+Assets\StarterAssets\Mobile\UI\UI_Icon_Look.png
+Assets\StarterAssets\Mobile\UI\UI_Icon_Look.png.meta
+Assets\StarterAssets\Mobile\UI\UI_Icon_Move.png
+Assets\StarterAssets\Mobile\UI\UI_Icon_Move.png.meta
+Assets\StarterAssets\Mobile\UI\UI_Icon_Sprint.png
+Assets\StarterAssets\Mobile\UI\UI_Icon_Sprint.png.meta
+Assets\StarterAssets\ThirdPersonController\Character\Animations.meta
+Assets\StarterAssets\ThirdPersonController\Character\Materials.meta
+Assets\StarterAssets\ThirdPersonController\Character\Models.meta
+Assets\StarterAssets\ThirdPersonController\Character\Sfx.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures.meta
+Assets\StarterAssets\ThirdPersonController\Prefabs\MainCamera.prefab
+Assets\StarterAssets\ThirdPersonController\Prefabs\MainCamera.prefab.meta
+Assets\StarterAssets\ThirdPersonController\Prefabs\NestedParentArmature_Unpack.prefab
+Assets\StarterAssets\ThirdPersonController\Prefabs\NestedParentArmature_Unpack.prefab.meta
+Assets\StarterAssets\ThirdPersonController\Prefabs\NestedParentCapsule_Unpack.prefab
+Assets\StarterAssets\ThirdPersonController\Prefabs\NestedParentCapsule_Unpack.prefab.meta
+Assets\StarterAssets\ThirdPersonController\Prefabs\PlayerArmature.prefab
+Assets\StarterAssets\ThirdPersonController\Prefabs\PlayerArmature.prefab.meta
+Assets\StarterAssets\ThirdPersonController\Prefabs\PlayerCapsule.prefab
+Assets\StarterAssets\ThirdPersonController\Prefabs\PlayerCapsule.prefab.meta
+Assets\StarterAssets\ThirdPersonController\Prefabs\PlayerFollowCamera.prefab
+Assets\StarterAssets\ThirdPersonController\Prefabs\PlayerFollowCamera.prefab.meta
+Assets\StarterAssets\ThirdPersonController\Scenes\Playground.meta
+Assets\StarterAssets\ThirdPersonController\Scenes\Playground.unity
+Assets\StarterAssets\ThirdPersonController\Scenes\Playground.unity.meta
+Assets\StarterAssets\ThirdPersonController\Scenes\PlaygroundSettings.lighting
+Assets\StarterAssets\ThirdPersonController\Scenes\PlaygroundSettings.lighting.meta
+Assets\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs
+Assets\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs.meta
+Assets\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs
+Assets\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs.meta
+Assets\StarterAssets\TutorialInfo\Icons\ReadMeImg.PNG
+Assets\StarterAssets\TutorialInfo\Icons\ReadMeImg.PNG.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\Cream.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\Cream.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\Glass.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\Glass.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\Grey.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\Grey.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternSpotBlue.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternSpotBlue.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternSpotGreenBig.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternSpotGreenBig.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternSpotGreenBlue.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternSpotGreenBlue.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternSpotGreenSmall.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternSpotGreenSmall.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternSpotGrey.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternSpotGrey.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternSpotPurple.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternSpotPurple.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternStripeGreen.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternStripeGreen.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternStripeGreenBlue.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternStripeGreenBlue.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternStripeGreenLime.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternStripeGreenLime.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternStripeGrey.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternStripeGrey.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternStripePurple.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\PatternStripePurple.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\SmallProps.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\SmallProps.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\SmallProps_Light.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\SmallProps_Light.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\StripesBeige.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\StripesBeige.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\TrimSheetBlues.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\TrimSheetBlues.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\TrimSheetGreenPurple.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\TrimSheetGreenPurple.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\TrimSheetPurple.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\TrimSheetPurple.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WallGreen.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WallGreen.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WallGreenDarker.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WallGreenDarker.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WallGrey.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WallGrey.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WallPurple.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WallPurple.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WallsBlue.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WallsBlue.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WoodPlanksBeige.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WoodPlanksBeige.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WoodPlanksBrown.mat
+Assets\UnityTechnologies\Basic Asset Pack Interior\Materials\WoodPlanksBrown.mat.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\BedDouble.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\BedDouble.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\BedPillow.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\BedPillow.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\BedSingle.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\BedSingle.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\BenchDinning.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\BenchDinning.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Books.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Books.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\ChairDinningA.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\ChairDinningA.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\ChairDinningB.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\ChairDinningB.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\LampShadeDome.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\LampShadeDome.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\LampShadeTube.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\LampShadeTube.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\LampSmall.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\LampSmall.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\LampTall.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\LampTall.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\LightBulb.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\LightBulb.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\LightCeliing.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\LightCeliing.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Mug.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Mug.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\PlantPotMedium.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\PlantPotMedium.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\PlantPotRoundMedium.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\PlantPotRoundMedium.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\PlantSnakeLarge.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\PlantSnakeLarge.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\ShelfWallSmall.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\ShelfWallSmall.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\ShelvesMediumA.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\ShelvesMediumA.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\ShelvesTallA.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\ShelvesTallA.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\SofaArmChair.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\SofaArmChair.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\SofaCusion.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\SofaCusion.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\SofaDouble.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\SofaDouble.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\SofaFootRest.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\SofaFootRest.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Switch.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Switch.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\TableNarrowDoubleDraw.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\TableNarrowDoubleDraw.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\TableNarrowSingleDraw.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\TableNarrowSingleDraw.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\TableRectangleMedium.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\TableRectangleMedium.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\TableRectangleShort.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\TableRectangleShort.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\TableSquareMedium.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\TableSquareMedium.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\VaseBulbus.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\VaseBulbus.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\VaseSmall.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\VaseSmall.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\VaseTall.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\VaseTall.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\VaseTallBottle.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\VaseTallBottle.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Lights.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\Floor_BeigeStripes.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\Floor_BeigeStripes.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\Floor_WoodPlanks.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\Floor_WoodPlanks.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\Floor_WoodPlanksWhitewash.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\Floor_WoodPlanksWhitewash.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SmallProps.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SmallProps.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SpotsGreen.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SpotsGreen.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SpotsGreenBlue.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SpotsGreenBlue.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SpotsGreenLight.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SpotsGreenLight.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SpotsGreenLime.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SpotsGreenLime.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SpotsGrey.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SpotsGrey.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SpotsPurpleBright.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\SpotsPurpleBright.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\StripesGreen.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\StripesGreen.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\StripesGreenBlue.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\StripesGreenBlue.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\StripesGreenLime.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\StripesGreenLime.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\StripesGrey.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\StripesGrey.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\StripesPurple.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\StripesPurple.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\TrimSheet_Blues.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\TrimSheet_Blues.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\TrimSheet_GreenPurple.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\TrimSheet_GreenPurple.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\TrimSheet_Purples.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\TrimSheet_Purples.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\WallBlule.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\WallBlule.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\WallGreen.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\WallGreen.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\WallGreenLight.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\WallGreenLight.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\WallGrey.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\WallGrey.jpg.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\WallPurple.jpg
+Assets\UnityTechnologies\Basic Asset Pack Interior\Textures\WallPurple.jpg.meta
+Assets\StarterAssets\Environment\Art\Materials\Blue_Mat.mat
+Assets\StarterAssets\Environment\Art\Materials\Blue_Mat.mat.meta
+Assets\StarterAssets\Environment\Art\Materials\GreyBlue_Mat.mat
+Assets\StarterAssets\Environment\Art\Materials\GreyBlue_Mat.mat.meta
+Assets\StarterAssets\Environment\Art\Materials\GridBlue_01_Mat.mat
+Assets\StarterAssets\Environment\Art\Materials\GridBlue_01_Mat.mat.meta
+Assets\StarterAssets\Environment\Art\Materials\GridOrange_01_Mat.mat
+Assets\StarterAssets\Environment\Art\Materials\GridOrange_01_Mat.mat.meta
+Assets\StarterAssets\Environment\Art\Materials\GridWhite_01_Mat.mat
+Assets\StarterAssets\Environment\Art\Materials\GridWhite_01_Mat.mat.meta
+Assets\StarterAssets\Environment\Art\Models\Box_350x250x200_Mesh.fbx
+Assets\StarterAssets\Environment\Art\Models\Box_350x250x200_Mesh.fbx.meta
+Assets\StarterAssets\Environment\Art\Models\Box_350x250x300_Mesh.fbx
+Assets\StarterAssets\Environment\Art\Models\Box_350x250x300_Mesh.fbx.meta
+Assets\StarterAssets\Environment\Art\Models\Ground_Mesh.fbx
+Assets\StarterAssets\Environment\Art\Models\Ground_Mesh.fbx.meta
+Assets\StarterAssets\Environment\Art\Models\Ramp_100x100x200_Mesh.fbx
+Assets\StarterAssets\Environment\Art\Models\Ramp_100x100x200_Mesh.fbx.meta
+Assets\StarterAssets\Environment\Art\Models\Ramp_Mesh.fbx
+Assets\StarterAssets\Environment\Art\Models\Ramp_Mesh.fbx.meta
+Assets\StarterAssets\Environment\Art\Models\Stairs_200x100x200_Mesh.fbx
+Assets\StarterAssets\Environment\Art\Models\Stairs_200x100x200_Mesh.fbx.meta
+Assets\StarterAssets\Environment\Art\Models\Stairs_650_400_300_Mesh.fbx
+Assets\StarterAssets\Environment\Art\Models\Stairs_650_400_300_Mesh.fbx.meta
+Assets\StarterAssets\Environment\Art\Models\Structure_Mesh.fbx
+Assets\StarterAssets\Environment\Art\Models\Structure_Mesh.fbx.meta
+Assets\StarterAssets\Environment\Art\Models\Tunnel_Mesh.fbx
+Assets\StarterAssets\Environment\Art\Models\Tunnel_Mesh.fbx.meta
+Assets\StarterAssets\Environment\Art\Models\Wall_Mesh.fbx
+Assets\StarterAssets\Environment\Art\Models\Wall_Mesh.fbx.meta
+Assets\StarterAssets\Environment\Art\Skybox\SkyboxLite.mat
+Assets\StarterAssets\Environment\Art\Skybox\SkyboxLite.mat.meta
+Assets\StarterAssets\Environment\Art\Skybox\SkyboxLiteWarm.mat
+Assets\StarterAssets\Environment\Art\Skybox\SkyboxLiteWarm.mat.meta
+Assets\StarterAssets\Environment\Art\Textures\Grid_01_BaseMap.png
+Assets\StarterAssets\Environment\Art\Textures\Grid_01_BaseMap.png.meta
+Assets\StarterAssets\Environment\Art\Textures\Grid_01_Emissive.png
+Assets\StarterAssets\Environment\Art\Textures\Grid_01_Emissive.png.meta
+Assets\StarterAssets\Environment\Art\Textures\Grid_01_Normal.png
+Assets\StarterAssets\Environment\Art\Textures\Grid_01_Normal.png.meta
+Assets\StarterAssets\Environment\Art\Textures\Grid_02_BaseMap.png
+Assets\StarterAssets\Environment\Art\Textures\Grid_02_BaseMap.png.meta
+Assets\StarterAssets\Mobile\Prefabs\CanvasInputs\UI_Canvas_StarterAssetsInputs_Joysticks.prefab
+Assets\StarterAssets\Mobile\Prefabs\CanvasInputs\UI_Canvas_StarterAssetsInputs_Joysticks.prefab.meta
+Assets\StarterAssets\Mobile\Prefabs\CanvasInputs\UI_Canvas_StarterAssetsInputs_TouchZones.prefab
+Assets\StarterAssets\Mobile\Prefabs\CanvasInputs\UI_Canvas_StarterAssetsInputs_TouchZones.prefab.meta
+Assets\StarterAssets\Mobile\Prefabs\EventSystem\UI_EventSystem.prefab
+Assets\StarterAssets\Mobile\Prefabs\EventSystem\UI_EventSystem.prefab.meta
+Assets\StarterAssets\Mobile\Prefabs\VirtualInputs\UI_Virtual_Button.prefab
+Assets\StarterAssets\Mobile\Prefabs\VirtualInputs\UI_Virtual_Button.prefab.meta
+Assets\StarterAssets\Mobile\Prefabs\VirtualInputs\UI_Virtual_Joystick.prefab
+Assets\StarterAssets\Mobile\Prefabs\VirtualInputs\UI_Virtual_Joystick.prefab.meta
+Assets\StarterAssets\Mobile\Prefabs\VirtualInputs\UI_Virtual_TouchZone.prefab
+Assets\StarterAssets\Mobile\Prefabs\VirtualInputs\UI_Virtual_TouchZone.prefab.meta
+Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs
+Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs.meta
+Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs
+Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs.meta
+Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs
+Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs.meta
+Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs
+Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs.meta
+Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs
+Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs.meta
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Jump--InAir.anim.fbx
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Jump--InAir.anim.fbx.meta
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Jump--Jump.anim.fbx
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Jump--Jump.anim.fbx.meta
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Locomotion--Run_N.anim.fbx
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Locomotion--Run_N.anim.fbx.meta
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Locomotion--Run_N_Land.anim.fbx
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Locomotion--Run_N_Land.anim.fbx.meta
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Locomotion--Run_S.anim.fbx
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Locomotion--Run_S.anim.fbx.meta
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Locomotion--Walk_N.anim.fbx
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Locomotion--Walk_N.anim.fbx.meta
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Locomotion--Walk_N_Land.anim.fbx
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Locomotion--Walk_N_Land.anim.fbx.meta
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Stand--Idle.anim.fbx
+Assets\StarterAssets\ThirdPersonController\Character\Animations\Stand--Idle.anim.fbx.meta
+Assets\StarterAssets\ThirdPersonController\Character\Animations\StarterAssetsThirdPerson.controller
+Assets\StarterAssets\ThirdPersonController\Character\Animations\StarterAssetsThirdPerson.controller.meta
+Assets\StarterAssets\ThirdPersonController\Character\Materials\M_Armature_Arms.mat
+Assets\StarterAssets\ThirdPersonController\Character\Materials\M_Armature_Arms.mat.meta
+Assets\StarterAssets\ThirdPersonController\Character\Materials\M_Armature_Body.mat
+Assets\StarterAssets\ThirdPersonController\Character\Materials\M_Armature_Body.mat.meta
+Assets\StarterAssets\ThirdPersonController\Character\Materials\M_Armature_Legs.mat
+Assets\StarterAssets\ThirdPersonController\Character\Materials\M_Armature_Legs.mat.meta
+Assets\StarterAssets\ThirdPersonController\Character\Models\Armature.fbx
+Assets\StarterAssets\ThirdPersonController\Character\Models\Armature.fbx.meta
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_01.wav
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_01.wav.meta
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_02.wav
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_02.wav.meta
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_03.wav
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_03.wav.meta
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_04.wav
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_04.wav.meta
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_05.wav
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_05.wav.meta
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_06.wav
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_06.wav.meta
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_07.wav
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_07.wav.meta
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_08.wav
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_08.wav.meta
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_09.wav
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_09.wav.meta
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_10.wav
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Footstep_10.wav.meta
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Land.wav
+Assets\StarterAssets\ThirdPersonController\Character\Sfx\Player_Land.wav.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Arms_AlbedoTransparency.tif
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Arms_AlbedoTransparency.tif.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Arms_MetallicSmoothness.tif
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Arms_MetallicSmoothness.tif.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Arms_Normal.tif
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Arms_Normal.tif.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Arms_RGB.tif
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Arms_RGB.tif.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Body_AlbedoTransparency.tif
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Body_AlbedoTransparency.tif.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Body_MetallicSmoothness.tif
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Body_MetallicSmoothness.tif.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Body_Normal.tif
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Body_Normal.tif.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Body_RGB.tif
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Body_RGB.tif.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Legs_AlbedoTransparency.tif
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Legs_AlbedoTransparency.tif.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Legs_MetallicSmoothness.tif
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Legs_MetallicSmoothness.tif.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Legs_Normal.tif
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Legs_Normal.tif.meta
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Legs_RGB.tif
+Assets\StarterAssets\ThirdPersonController\Character\Textures\Armature_Legs_RGB.tif.meta
+Assets\StarterAssets\ThirdPersonController\Scenes\Playground\LightingData.asset
+Assets\StarterAssets\ThirdPersonController\Scenes\Playground\LightingData.asset.meta
+Assets\StarterAssets\ThirdPersonController\Scenes\Playground\ReflectionProbe-0.exr
+Assets\StarterAssets\ThirdPersonController\Scenes\Playground\ReflectionProbe-0.exr.meta
+Assets\StarterAssets\ThirdPersonController\Scenes\Playground\ReflectionProbe-1.exr
+Assets\StarterAssets\ThirdPersonController\Scenes\Playground\ReflectionProbe-1.exr.meta
+Assets\StarterAssets\ThirdPersonController\Scenes\Playground\ReflectionProbe-2.exr
+Assets\StarterAssets\ThirdPersonController\Scenes\Playground\ReflectionProbe-2.exr.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\Floor1m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\Floor1m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\Floor2m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\Floor2m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\Floor2x4m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\Floor2x4m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\Floor3m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\Floor3m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\Floor4m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\Floor4m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\RugDoorMat.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\RugDoorMat.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\RugRectangleLong.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\RugRectangleLong.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\RugRectangleMedium.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\RugRectangleMedium.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\RugRectangleSmall.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Floor\RugRectangleSmall.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\Door.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\Door.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\Wall1m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\Wall1m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\Wall2m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\Wall2m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\Wall3m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\Wall3m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\Wall4m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\Wall4m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallCornerInner.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallCornerInner.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallCornerOuter.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallCornerOuter.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallDoor2m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallDoor2m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindow2m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindow2m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindow2mCurtain.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindow2mCurtain.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindow4m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindow4m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindow4mCurtain.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindow4mCurtain.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindowBay4m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindowBay4m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindowBay4mCurtain.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindowBay4mCurtain.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindowTall4m.FBX
+Assets\UnityTechnologies\Basic Asset Pack Interior\Models\Walls\WallWindowTall4m.FBX.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\Floor1m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\Floor1m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\Floor2m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\Floor2m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\Floor2x4m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\Floor2x4m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\Floor3m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\Floor3m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\Floor4m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\Floor4m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\RugDoorMat.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\RugDoorMat.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\RugRectangleLong.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\RugRectangleLong.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\RugRectangleMedium.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\RugRectangleMedium.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\RugRectangleSmall.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Floor\RugRectangleSmall.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\BedDouble.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\BedDouble.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\BenchDinning.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\BenchDinning.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\ChairDinningA.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\ChairDinningA.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\ChairDinningB.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\ChairDinningB.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\ShelfWallSmall.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\ShelfWallSmall.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\ShelvesMediumA.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\ShelvesMediumA.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\ShelvesTallA.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\ShelvesTallA.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\SofaArmChair.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\SofaArmChair.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\SofaDouble.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\SofaDouble.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\SofaFootRest.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\SofaFootRest.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\TableNarrowDoubleDraw.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\TableNarrowDoubleDraw.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\TableNarrowSingleDraw.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\TableNarrowSingleDraw.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\TableRectangleMedium.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\TableRectangleMedium.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\TableRectangleShort.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\TableRectangleShort.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\TableSquareMedium.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Furniture\TableSquareMedium.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Lights\LampSmall.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Lights\LampSmall.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Lights\LampTall.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Lights\LampTall.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Lights\LightCeliing.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Lights\LightCeliing.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Lights\LightCeliingDome.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Lights\LightCeliingDome.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\Books.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\Books.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\Mug.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\Mug.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\PlantPotMedium.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\PlantPotMedium.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\PlantPotRoundMedium.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\PlantPotRoundMedium.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\Switch.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\Switch.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\VaseRoundBottom.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\VaseRoundBottom.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\VaseSmall.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\VaseSmall.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\VaseTall.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\VaseTall.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\VaseTallBottle.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Props\VaseTallBottle.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\Wall1m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\Wall1m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\Wall2m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\Wall2m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\Wall3m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\Wall3m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\Wall4m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\Wall4m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallCornerInner.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallCornerInner.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallCornerOuter.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallCornerOuter.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallDoor2m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallDoor2m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallDoorFrame2m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallDoorFrame2m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallWindow2m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallWindow2m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallWindow4m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallWindow4m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallWindowBay4m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallWindowBay4m.prefab.meta
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallWindowTall4m.prefab
+Assets\UnityTechnologies\Basic Asset Pack Interior\Prefabs\Walls\WallWindowTall4m.prefab.meta
